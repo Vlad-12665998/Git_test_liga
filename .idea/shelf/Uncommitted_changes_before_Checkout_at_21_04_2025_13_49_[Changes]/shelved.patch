@@ -1,0 +1,190 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e725a080-943f-489e-a0c1-73a4a5166736\" name=\"Changes\" comment=\"Добавили структуру POM, тесты , добавили BaseTest\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/browser/Browser.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/browser/Config.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/pages/base/BasePage.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/pages/demoqa/CheckBoxPage.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/pages/demoqa/DatePickerPage.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/pages/demoqa/SelectMenuPage.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/UI/CheckBoxTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/UI/DatePickerTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/UI/RadioButtonTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/UI/SelectMenuTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/UI/TextBoxTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/base/BaseTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"jar://$MAVEN_REPOSITORY$/org/testng/testng/7.8.0/testng-7.8.0-sources.jar!/org/testng/annotations/Test.java\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 4\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2vcUEOwmszNNvJrOsT7YGXYSlg6\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.Main.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"TestNG.CheckBoxTest.executor\": \"Run\",\r\n    \"TestNG.CheckBoxTest.step_02.executor\": \"Run\",\r\n    \"TestNG.DatePickerTest.executor\": \"Run\",\r\n    \"TestNG.RadioButtonTest.executor\": \"Run\",\r\n    \"TestNG.RadioButtonTest.step_01.executor\": \"Run\",\r\n    \"TestNG.SelectMenuTest.executor\": \"Run\",\r\n    \"TestNG.SelectMenuTest.step_01.executor\": \"Run\",\r\n    \"TestNG.TextBoxTest.checkTextBox.executor\": \"Run\",\r\n    \"TestNG.TextBoxTest.checkTitleTextBox.executor\": \"Run\",\r\n    \"TestNG.TextBoxTest.executor\": \"Run\",\r\n    \"git-widget-placeholder\": \"test\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"onboarding.tips.debug.path\": \"C:/Users/Admin/IdeaProjects/Liga_selenium/src/main/java/org/example/Main.java\",\r\n    \"settings.editor.selected.configurable\": \"vcs.log\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"TestNG.TextBoxTest.checkTextBox\">\r\n    <configuration name=\"DatePickerTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Liga_selenium\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"UI.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"UI\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"UI.DatePickerTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SelectMenuTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Liga_selenium\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"UI.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"UI\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"UI.SelectMenuTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SelectMenuTest.step_01\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Liga_selenium\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"UI.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"UI\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"UI.SelectMenuTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"step_01\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TextBoxTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Liga_selenium\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"UI.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"UI\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"UI.TextBoxTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TextBoxTest.checkTextBox\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Liga_selenium\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"UI.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"UI\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"UI.TextBoxTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"checkTextBox\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.TextBoxTest.checkTextBox\" />\r\n        <item itemvalue=\"TestNG.TextBoxTest\" />\r\n        <item itemvalue=\"TestNG.SelectMenuTest.step_01\" />\r\n        <item itemvalue=\"TestNG.SelectMenuTest\" />\r\n        <item itemvalue=\"TestNG.DatePickerTest\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e725a080-943f-489e-a0c1-73a4a5166736\" name=\"Changes\" comment=\"\" />\r\n      <created>1744443746624</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1744443746624</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"test\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Добавили структуру POM, тесты , добавили BaseTest\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Добавили структуру POM, тесты , добавили BaseTest\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 9a276cdbc3594a2a848e160257396c7f00cf3a47)
++++ b/.idea/workspace.xml	(date 1745232490903)
+@@ -5,20 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="e725a080-943f-489e-a0c1-73a4a5166736" name="Changes" comment="Добавили структуру POM, тесты , добавили BaseTest">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/browser/Browser.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/browser/Config.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/demoqa/CheckBoxPage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/demoqa/DatePickerPage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/demoqa/SelectMenuPage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/UI/CheckBoxTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/UI/DatePickerTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/UI/RadioButtonTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/UI/SelectMenuTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/UI/TextBoxTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/UI/ButtonTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/UI/DoubleButtonTest.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -40,6 +29,18 @@
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
++  "lastFilter": {
++    "state": "OPEN",
++    "assignee": "Vlad-12665998"
++  }
++}]]></component>
++  <component name="GithubPullRequestsUISettings"><![CDATA[{
++  "selectedUrlAndAccountId": {
++    "url": "https://github.com/Vlad-12665998/Git_test_liga.git",
++    "accountId": "2c180295-e560-46d1-9bb8-bec5411e3fe1"
++  }
++}]]></component>
+   <component name="HighlightingSettingsPerFile">
+     <setting file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.8.0/testng-7.8.0-sources.jar!/org/testng/annotations/Test.java" root0="FORCE_HIGHLIGHTING" />
+   </component>
+@@ -60,9 +61,11 @@
+     "Application.Main.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.git.unshallow": "true",
++    "TestNG.ButtonTest.executor": "Run",
+     "TestNG.CheckBoxTest.executor": "Run",
+     "TestNG.CheckBoxTest.step_02.executor": "Run",
+     "TestNG.DatePickerTest.executor": "Run",
++    "TestNG.DoubleButtonTest.executor": "Run",
+     "TestNG.RadioButtonTest.executor": "Run",
+     "TestNG.RadioButtonTest.step_01.executor": "Run",
+     "TestNG.SelectMenuTest.executor": "Run",
+@@ -76,8 +79,8 @@
+     "settings.editor.selected.configurable": "vcs.log"
+   }
+ }]]></component>
+-  <component name="RunManager" selected="TestNG.TextBoxTest.checkTextBox">
+-    <configuration name="DatePickerTest" type="TestNG" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="TestNG.RightButtonTest">
++    <configuration name="ButtonTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Liga_selenium" />
+       <extension name="coverage">
+         <pattern>
+@@ -86,7 +89,7 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="UI" />
+-      <option name="MAIN_CLASS_NAME" value="UI.DatePickerTest" />
++      <option name="MAIN_CLASS_NAME" value="UI.ButtonTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -94,7 +97,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SelectMenuTest" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="DoubleButtonTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Liga_selenium" />
+       <extension name="coverage">
+         <pattern>
+@@ -103,7 +106,7 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="UI" />
+-      <option name="MAIN_CLASS_NAME" value="UI.SelectMenuTest" />
++      <option name="MAIN_CLASS_NAME" value="UI.DoubleButtonTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -111,7 +114,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SelectMenuTest.step_01" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="RightButtonTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Liga_selenium" />
+       <extension name="coverage">
+         <pattern>
+@@ -120,16 +123,15 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="UI" />
+-      <option name="MAIN_CLASS_NAME" value="UI.SelectMenuTest" />
+-      <option name="METHOD_NAME" value="step_01" />
+-      <option name="TEST_OBJECT" value="METHOD" />
++      <option name="MAIN_CLASS_NAME" value="UI.RightButtonTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="TextBoxTest" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="TextBoxTest.checkTextBox" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Liga_selenium" />
+       <extension name="coverage">
+         <pattern>
+@@ -139,14 +141,15 @@
+       </extension>
+       <option name="PACKAGE_NAME" value="UI" />
+       <option name="MAIN_CLASS_NAME" value="UI.TextBoxTest" />
+-      <option name="TEST_OBJECT" value="CLASS" />
++      <option name="METHOD_NAME" value="checkTextBox" />
++      <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="TextBoxTest.checkTextBox" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="TextBoxTest.checkTitleTextBox" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Liga_selenium" />
+       <extension name="coverage">
+         <pattern>
+@@ -156,7 +159,7 @@
+       </extension>
+       <option name="PACKAGE_NAME" value="UI" />
+       <option name="MAIN_CLASS_NAME" value="UI.TextBoxTest" />
+-      <option name="METHOD_NAME" value="checkTextBox" />
++      <option name="METHOD_NAME" value="checkTitleTextBox" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+@@ -166,11 +169,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="TestNG.RightButtonTest" />
++        <item itemvalue="TestNG.DoubleButtonTest" />
++        <item itemvalue="TestNG.ButtonTest" />
++        <item itemvalue="TestNG.TextBoxTest.checkTitleTextBox" />
+         <item itemvalue="TestNG.TextBoxTest.checkTextBox" />
+-        <item itemvalue="TestNG.TextBoxTest" />
+-        <item itemvalue="TestNG.SelectMenuTest.step_01" />
+-        <item itemvalue="TestNG.SelectMenuTest" />
+-        <item itemvalue="TestNG.DatePickerTest" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -183,6 +186,15 @@
+       <option name="presentableId" value="Default" />
+       <updated>1744443746624</updated>
+     </task>
++    <task id="LOCAL-00001" summary="Добавили структуру POM, тесты , добавили BaseTest">
++      <option name="closed" value="true" />
++      <created>1745218711273</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1745218711273</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">

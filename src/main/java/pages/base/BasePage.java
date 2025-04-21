@@ -1,81 +1,83 @@
 package pages.base;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
-import java.util.List;
+import org.openqa.selenium.support.ui.Select;
+import java.time.LocalDate;
 
 public class BasePage {
+    protected WebDriver driver;
 
-    public WebDriver driver;
-
-    public BasePage(WebDriver driver){
+    public BasePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    private static final By NAME_PAGE = By.xpath("//h1[@class='text-center']");
-
-    /**
-     * Перейти по url
-     * @param url ссылка в виде строки
-     */
-    public void openUrl(String url){
+    // Основные методы
+    public void openUrl(String url) {
         driver.get(url);
     }
 
-    /**
-     * Найти элемент на странице
-     * @param locator путь до элемента, тип - By
-     * @return element найденный элемент
-     */
-    public WebElement findElement(By locator){
+    public void type(By locator, String text) {
         WebElement element = driver.findElement(locator);
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView();", element);
-        return element;
+        element.clear();
+        element.sendKeys(text);
     }
 
-    public List<WebElement> findElements(String locator){
-        return driver.findElements(By.xpath(locator));
+    public String getValue(By locator) {
+        return driver.findElement(locator).getAttribute("value");
     }
 
-    public String getText(By locator){
-        return findElement(locator).getText();
+    public void selectByVisibleText(By locator, String text) {
+        new Select(driver.findElement(locator)).selectByVisibleText(text);
     }
 
-    public String getPageName(){
-        return getText(NAME_PAGE);
+    public void selectFromDatalist(By inputLocator, String value) {
+        WebElement input = driver.findElement(inputLocator);
+        input.sendKeys(value);
+        // Для datalist может потребоваться дополнительный клик на опции
     }
 
-    public boolean isElementEnabled(By locator){
-        return findElement(locator).isEnabled();
-    }
-
-    public void clear(By locator){
-        findElement(locator).clear();
-    }
-
-    public void sendKeys(By locator, String text){
-        findElement(locator).sendKeys(text);
-    }
-
-    public void click(By locator){
-        findElement(locator).click();
-    }
-
-    public boolean isElementDisplay(By locator){
-        try {
-            return findElement(locator).isDisplayed();
-        } catch (Exception ex) {
-            return false;
+    public void setCheckbox(By locator, boolean enable) {
+        WebElement checkbox = driver.findElement(locator);
+        if (checkbox.isSelected() != enable) {
+            checkbox.click();
         }
     }
 
-    public void waitElementIsDisplay(By locator, int seconds){
-        new WebDriverWait(driver, Duration.ofSeconds(seconds)).until(driver1 -> isElementDisplay(locator));
+    public boolean isElementSelected(By locator) {
+        return driver.findElement(locator).isSelected();
+    }
+
+    public void setRadio(By locator) {
+        driver.findElement(locator).click();
+    }
+
+    public void setDate(By locator, LocalDate date) {
+        String formattedDate = String.format("%02d/%02d/%04d", date.getMonthValue(), date.getDayOfMonth(), date.getYear());
+        driver.findElement(locator).sendKeys(formattedDate);
+    }
+
+    public void setColor(By locator, String hexColor) {
+        driver.findElement(locator).sendKeys(hexColor);
+    }
+
+    public void setRangeToMax(By locator) {
+        WebElement range = driver.findElement(locator);
+        range.clear();
+        range.sendKeys("100"); // Предполагаем, что максимум = 100
+    }
+
+    public void click(By locator) {
+        driver.findElement(locator).click();
+    }
+
+    public String getText(By locator) {
+        return driver.findElement(locator).getText();
     }
 }
+
+
+
+
+

@@ -1,0 +1,24 @@
+Index: src/main/java/browser/Browser.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package browser;\r\n\r\nimport io.github.bonigarcia.wdm.WebDriverManager;\r\nimport org.openqa.selenium.WebDriver;\r\nimport org.openqa.selenium.chrome.ChromeDriver;\r\nimport org.openqa.selenium.chrome.ChromeOptions;\r\nimport org.openqa.selenium.firefox.FirefoxDriver;\r\nimport org.openqa.selenium.firefox.FirefoxOptions;\r\nimport org.openqa.selenium.remote.CapabilityType;\r\n\r\nimport java.time.Duration;\r\n\r\nimport static browser.Config.BROWSER_TYPE;\r\n\r\npublic class Browser {\r\n\r\n    public static WebDriver createDriver(){\r\n\r\n        WebDriver driver;\r\n\r\n        switch (BROWSER_TYPE){\r\n            case \"chrome\":\r\n                WebDriverManager.chromedriver().setup();\r\n                ChromeOptions chromeOptions = new ChromeOptions();\r\n                chromeOptions.addArguments(\"--headless\");\r\n                chromeOptions.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, \"eager\");\r\n                driver = new ChromeDriver(chromeOptions);\r\n                break;\r\n            case \"firefox\":\r\n                WebDriverManager.firefoxdriver().setup();\r\n                FirefoxOptions firefoxOptions = new FirefoxOptions();\r\n                firefoxOptions.addArguments(\"--headless\");\r\n                firefoxOptions.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, \"eager\");\r\n                driver = new FirefoxDriver(firefoxOptions);\r\n                break;\r\n            default:\r\n                throw new IllegalArgumentException(\"Некорректное имя браузера: \" + BROWSER_TYPE);\r\n        }\r\n\r\n        driver.manage().window().maximize();\r\n        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));\r\n\r\n        return driver;\r\n    }\r\n}
+===================================================================
+diff --git a/src/main/java/browser/Browser.java b/src/main/java/browser/Browser.java
+--- a/src/main/java/browser/Browser.java	(revision 9a276cdbc3594a2a848e160257396c7f00cf3a47)
++++ b/src/main/java/browser/Browser.java	(date 1745251746219)
+@@ -1,3 +1,7 @@
++package Browser;
++
++import java.time.Duration;
++
+ package browser;
+ 
+ import io.github.bonigarcia.wdm.WebDriverManager;
+@@ -42,4 +46,5 @@
+ 
+         return driver;
+     }
+-}
+\ No newline at end of file
++}{
++}

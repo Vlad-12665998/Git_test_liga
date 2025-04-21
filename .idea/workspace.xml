@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e725a080-943f-489e-a0c1-73a4a5166736" name="Changes" comment="Добавили структуру POM, тесты , добавили BaseTest">
-      <change afterPath="$PROJECT_DIR$/src/main/java/browser/Browser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/browser/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/demoqa/CheckBoxPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/demoqa/DatePickerPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/demoqa/SelectMenuPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UI/CheckBoxTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UI/DatePickerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UI/RadioButtonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UI/SelectMenuTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UI/TextBoxTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UI/WebFormTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,14 +61,15 @@
     "TestNG.TextBoxTest.checkTextBox.executor": "Run",
     "TestNG.TextBoxTest.checkTitleTextBox.executor": "Run",
     "TestNG.TextBoxTest.executor": "Run",
+    "TestNG.WebFormTest.executor": "Run",
     "git-widget-placeholder": "test",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/Admin/IdeaProjects/Liga_selenium/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "vcs.log"
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.TextBoxTest.checkTextBox">
-    <configuration name="DatePickerTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.WebFormTest">
+    <configuration name="CheckBoxTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Liga_selenium" />
       <extension name="coverage">
         <pattern>
@@ -86,24 +78,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="UI" />
-      <option name="MAIN_CLASS_NAME" value="UI.DatePickerTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SelectMenuTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Liga_selenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UI" />
-      <option name="MAIN_CLASS_NAME" value="UI.SelectMenuTest" />
+      <option name="MAIN_CLASS_NAME" value="UI.CheckBoxTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -164,13 +139,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Liga_selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UI" />
+      <option name="MAIN_CLASS_NAME" value="UI.WebFormTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WebFormTest" />
         <item itemvalue="TestNG.TextBoxTest.checkTextBox" />
         <item itemvalue="TestNG.TextBoxTest" />
         <item itemvalue="TestNG.SelectMenuTest.step_01" />
-        <item itemvalue="TestNG.SelectMenuTest" />
-        <item itemvalue="TestNG.DatePickerTest" />
+        <item itemvalue="TestNG.CheckBoxTest" />
       </list>
     </recent_temporary>
   </component>
