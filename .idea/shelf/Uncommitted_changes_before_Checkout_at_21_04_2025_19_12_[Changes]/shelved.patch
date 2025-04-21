@@ -1,0 +1,212 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e725a080-943f-489e-a0c1-73a4a5166736\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Cat.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 4\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2vcUEOwmszNNvJrOsT7YGXYSlg6\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.Main.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"new-class\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"onboarding.tips.debug.path\": \"C:/Users/Admin/IdeaProjects/Liga_selenium/src/main/java/org/example/Main.java\",\r\n    \"settings.editor.selected.configurable\": \"vcs.log\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e725a080-943f-489e-a0c1-73a4a5166736\" name=\"Changes\" comment=\"\" />\r\n      <created>1744443746624</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1744443746624</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b3876e58f13bebfc2bf9641a6ee3f3a7c50191a7)
++++ b/.idea/workspace.xml	(date 1745251905089)
+@@ -4,9 +4,21 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="e725a080-943f-489e-a0c1-73a4a5166736" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Cat.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
++    <list default="true" id="e725a080-943f-489e-a0c1-73a4a5166736" name="Changes" comment="Добавили структуру POM, тесты , добавили BaseTest">
++      <change afterPath="$PROJECT_DIR$/src/main/java/browser/Browser.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/browser/Config.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/pages/demoqa/CheckBoxPage.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/pages/demoqa/DatePickerPage.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/pages/demoqa/SelectMenuPage.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/UI/CheckBoxTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/UI/DatePickerTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/UI/RadioButtonTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/UI/SelectMenuTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/UI/TextBoxTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -21,11 +33,22 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="main" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 4
+-}]]></component>
++  <component name="HighlightingSettingsPerFile">
++    <setting file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.8.0/testng-7.8.0-sources.jar!/org/testng/annotations/Test.java" root0="FORCE_HIGHLIGHTING" />
++  </component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="CurrentFile" />
++  </component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 4
++}</component>
+   <component name="ProjectId" id="2vcUEOwmszNNvJrOsT7YGXYSlg6" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -37,12 +60,120 @@
+     "Application.Main.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "new-class",
++    "TestNG.CheckBoxTest.executor": "Run",
++    "TestNG.CheckBoxTest.step_02.executor": "Run",
++    "TestNG.DatePickerTest.executor": "Run",
++    "TestNG.RadioButtonTest.executor": "Run",
++    "TestNG.RadioButtonTest.step_01.executor": "Run",
++    "TestNG.SelectMenuTest.executor": "Run",
++    "TestNG.SelectMenuTest.step_01.executor": "Run",
++    "TestNG.TextBoxTest.checkTextBox.executor": "Run",
++    "TestNG.TextBoxTest.checkTitleTextBox.executor": "Run",
++    "TestNG.TextBoxTest.executor": "Run",
++    "git-widget-placeholder": "test",
+     "kotlin-language-version-configured": "true",
+     "onboarding.tips.debug.path": "C:/Users/Admin/IdeaProjects/Liga_selenium/src/main/java/org/example/Main.java",
+     "settings.editor.selected.configurable": "vcs.log"
+   }
+ }]]></component>
++  <component name="RunManager" selected="TestNG.TextBoxTest.checkTextBox">
++    <configuration name="DatePickerTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Liga_selenium" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="UI.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="UI" />
++      <option name="MAIN_CLASS_NAME" value="UI.DatePickerTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="SelectMenuTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Liga_selenium" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="UI.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="UI" />
++      <option name="MAIN_CLASS_NAME" value="UI.SelectMenuTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="SelectMenuTest.step_01" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Liga_selenium" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="UI.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="UI" />
++      <option name="MAIN_CLASS_NAME" value="UI.SelectMenuTest" />
++      <option name="METHOD_NAME" value="step_01" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="TextBoxTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Liga_selenium" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="UI.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="UI" />
++      <option name="MAIN_CLASS_NAME" value="UI.TextBoxTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="TextBoxTest.checkTextBox" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Liga_selenium" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="UI.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="UI" />
++      <option name="MAIN_CLASS_NAME" value="UI.TextBoxTest" />
++      <option name="METHOD_NAME" value="checkTextBox" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="TestNG.TextBoxTest.checkTextBox" />
++        <item itemvalue="TestNG.TextBoxTest" />
++        <item itemvalue="TestNG.SelectMenuTest.step_01" />
++        <item itemvalue="TestNG.SelectMenuTest" />
++        <item itemvalue="TestNG.DatePickerTest" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -59,10 +190,26 @@
+       <map>
+         <entry key="MAIN">
+           <value>
+-            <State />
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="test" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
+           </value>
+         </entry>
+       </map>
+     </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Добавили структуру POM, тесты , добавили BaseTest" />
++    <option name="LAST_COMMIT_MESSAGE" value="Добавили структуру POM, тесты , добавили BaseTest" />
+   </component>
+ </project>
+\ No newline at end of file

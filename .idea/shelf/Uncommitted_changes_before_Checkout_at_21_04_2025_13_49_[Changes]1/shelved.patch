@@ -1,0 +1,116 @@
+Index: src/test/java/UI/ButtonTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/UI/ButtonTest.java b/src/test/java/UI/ButtonTest.java
+new file mode 100644
+--- /dev/null	(date 1745232125406)
++++ b/src/test/java/UI/ButtonTest.java	(date 1745232125406)
+@@ -0,0 +1,27 @@
++package UI;
++
++import base.BaseTest;
++import org.openqa.selenium.By;
++import org.testng.Assert;
++import org.testng.annotations.Test;
++
++public class ButtonTest extends BaseTest {
++
++    private static final String BUTTONS_PAGE_URL = "https://demoqa.com/buttons";
++    private static final By CLICK_ME_BUTTON = By.xpath("//button[text()='Click Me']");
++    private static final By DYNAMIC_CLICK_MESSAGE = By.id("dynamicClickMessage");
++
++    @Test
++    public void testDynamicClickButton() {
++        // 1. Загружаем страницу с элементами "Buttons"
++        driver.get(BUTTONS_PAGE_URL);
++
++        // 2. Нажимаем на кнопку "Click Me"
++        driver.findElement(CLICK_ME_BUTTON).click();
++
++        // Проверяем появление текста "You have done a dynamic click"
++        String actualText = driver.findElement(DYNAMIC_CLICK_MESSAGE).getText();
++        Assert.assertEquals(actualText, "You have done a dynamic click",
++                "Текст после клика не соответствует ожидаемому");
++    }
++}
+Index: src/test/java/UI/DoubleButtonTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/UI/DoubleButtonTest.java b/src/test/java/UI/DoubleButtonTest.java
+new file mode 100644
+--- /dev/null	(date 1745232383231)
++++ b/src/test/java/UI/DoubleButtonTest.java	(date 1745232383231)
+@@ -0,0 +1,29 @@
++package UI;
++
++import base.BaseTest;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.interactions.Actions;
++import org.testng.Assert;
++import org.testng.annotations.Test;
++
++public class DoubleButtonTest extends BaseTest {
++
++    private static final String BUTTONS_PAGE_URL = "https://demoqa.com/buttons";
++    private static final By DOUBLE_CLICK_BUTTON = By.id("doubleClickBtn");
++    private static final By DOUBLE_CLICK_MESSAGE = By.id("doubleClickMessage");
++
++    @Test
++    public void testDoubleClickButton() {
++        // 1. Загружаем страницу с кнопками
++        driver.get(BUTTONS_PAGE_URL);
++
++        // 2. Двойной клик по кнопке
++        WebElement button = driver.findElement(DOUBLE_CLICK_BUTTON);
++        new Actions(driver).doubleClick(button).perform();
++
++        // 3. Проверка текста
++        String actualText = driver.findElement(DOUBLE_CLICK_MESSAGE).getText();
++        Assert.assertEquals(actualText, "You have done a double click");
++    }
++}
+Index: src/test/java/UI/RightButtonTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/UI/RightButtonTest.java b/src/test/java/UI/RightButtonTest.java
+new file mode 100644
+--- /dev/null	(date 1745232490784)
++++ b/src/test/java/UI/RightButtonTest.java	(date 1745232490784)
+@@ -0,0 +1,29 @@
++package UI;
++
++import base.BaseTest;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.interactions.Actions;
++import org.testng.Assert;
++import org.testng.annotations.Test;
++
++public class RightButtonTest extends BaseTest {
++
++    private static final String BUTTONS_PAGE_URL = "https://demoqa.com/buttons";
++    private static final By RIGHT_CLICK_BUTTON = By.id("rightClickBtn");
++    private static final By RIGHT_CLICK_MESSAGE = By.id("rightClickMessage");
++
++    @Test
++    public void testRightClickButton() {
++        // 1. Загружаем страницу с кнопками
++        driver.get(BUTTONS_PAGE_URL);
++
++        // 2. Правый клик по кнопке
++        WebElement button = driver.findElement(RIGHT_CLICK_BUTTON);
++        new Actions(driver).contextClick(button).perform();
++
++        // 3. Проверка текста
++        String actualText = driver.findElement(RIGHT_CLICK_MESSAGE).getText();
++        Assert.assertEquals(actualText, "You have done a right click");
++    }
++}
+\ No newline at end of file

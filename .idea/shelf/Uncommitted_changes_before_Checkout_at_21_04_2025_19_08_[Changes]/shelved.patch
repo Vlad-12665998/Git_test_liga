@@ -1,0 +1,330 @@
+Index: src/test/java/UI/ButtonTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/UI/ButtonTest.java b/src/test/java/UI/ButtonTest.java
+new file mode 100644
+--- /dev/null	(date 1745251439137)
++++ b/src/test/java/UI/ButtonTest.java	(date 1745251439137)
+@@ -0,0 +1,27 @@
++package UI;
++
++import base.BaseTest;
++import org.openqa.selenium.By;
++import org.testng.Assert;
++import org.testng.annotations.Test;
++
++public class ButtonTest extends BaseTest {
++
++    private static final String BUTTONS_PAGE_URL = "https://demoqa.com/buttons";
++    private static final By CLICK_ME_BUTTON = By.xpath("//button[text()='Click Me']");
++    private static final By DYNAMIC_CLICK_MESSAGE = By.id("dynamicClickMessage");
++
++    @Test
++    public void testDynamicClickButton() {
++        // 1. Загружаем страницу с элементами "Buttons"
++        driver.get(BUTTONS_PAGE_URL);
++
++        // 2. Нажимаем на кнопку "Click Me"
++        driver.findElement(CLICK_ME_BUTTON).click();
++
++        // Проверяем появление текста "You have done a dynamic click"
++        String actualText = driver.findElement(DYNAMIC_CLICK_MESSAGE).getText();
++        Assert.assertEquals(actualText, "You have done a dynamic click",
++                "Текст после клика не соответствует ожидаемому");
++    }
++}
+Index: src/test/java/UI/DoubleButtonTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/UI/DoubleButtonTest.java b/src/test/java/UI/DoubleButtonTest.java
+new file mode 100644
+--- /dev/null	(date 1745251439127)
++++ b/src/test/java/UI/DoubleButtonTest.java	(date 1745251439127)
+@@ -0,0 +1,29 @@
++package UI;
++
++import base.BaseTest;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.interactions.Actions;
++import org.testng.Assert;
++import org.testng.annotations.Test;
++
++public class DoubleButtonTest extends BaseTest {
++
++    private static final String BUTTONS_PAGE_URL = "https://demoqa.com/buttons";
++    private static final By DOUBLE_CLICK_BUTTON = By.id("doubleClickBtn");
++    private static final By DOUBLE_CLICK_MESSAGE = By.id("doubleClickMessage");
++
++    @Test
++    public void testDoubleClickButton() {
++        // 1. Загружаем страницу с кнопками
++        driver.get(BUTTONS_PAGE_URL);
++
++        // 2. Двойной клик по кнопке
++        WebElement button = driver.findElement(DOUBLE_CLICK_BUTTON);
++        new Actions(driver).doubleClick(button).perform();
++
++        // 3. Проверка текста
++        String actualText = driver.findElement(DOUBLE_CLICK_MESSAGE).getText();
++        Assert.assertEquals(actualText, "You have done a double click");
++    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e725a080-943f-489e-a0c1-73a4a5166736\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Cat.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 4\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2vcUEOwmszNNvJrOsT7YGXYSlg6\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.Main.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"new-class\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"onboarding.tips.debug.path\": \"C:/Users/Admin/IdeaProjects/Liga_selenium/src/main/java/org/example/Main.java\",\r\n    \"settings.editor.selected.configurable\": \"vcs.log\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e725a080-943f-489e-a0c1-73a4a5166736\" name=\"Changes\" comment=\"\" />\r\n      <created>1744443746624</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1744443746624</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b3876e58f13bebfc2bf9641a6ee3f3a7c50191a7)
++++ b/.idea/workspace.xml	(date 1745251652879)
+@@ -5,8 +5,10 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="e725a080-943f-489e-a0c1-73a4a5166736" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Cat.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/Browser/Browser.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/UI/ButtonTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/UI/DoubleButtonTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/UI/RightButtonTest.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -21,11 +23,16 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="main" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 4
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 4
++}</component>
+   <component name="ProjectId" id="2vcUEOwmszNNvJrOsT7YGXYSlg6" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -37,12 +44,109 @@
+     "Application.Main.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "new-class",
++    "git-widget-placeholder": "exam",
+     "kotlin-language-version-configured": "true",
+     "onboarding.tips.debug.path": "C:/Users/Admin/IdeaProjects/Liga_selenium/src/main/java/org/example/Main.java",
+     "settings.editor.selected.configurable": "vcs.log"
+   }
+ }]]></component>
++  <component name="RunManager">
++    <configuration name="CheckBoxTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Liga_selenium" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="UI.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="UI" />
++      <option name="MAIN_CLASS_NAME" value="UI.CheckBoxTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="DatePickerTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Liga_selenium" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="UI.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="UI" />
++      <option name="MAIN_CLASS_NAME" value="UI.DatePickerTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="SelectMenuTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Liga_selenium" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="UI.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="UI" />
++      <option name="MAIN_CLASS_NAME" value="UI.SelectMenuTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="SelectMenuTest.step_01" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Liga_selenium" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="UI.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="UI" />
++      <option name="MAIN_CLASS_NAME" value="UI.SelectMenuTest" />
++      <option name="METHOD_NAME" value="step_01" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="TextBoxTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Liga_selenium" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="UI.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="UI" />
++      <option name="MAIN_CLASS_NAME" value="UI.TextBoxTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="TestNG.TextBoxTest" />
++        <item itemvalue="TestNG.SelectMenuTest.step_01" />
++        <item itemvalue="TestNG.SelectMenuTest" />
++        <item itemvalue="TestNG.DatePickerTest" />
++        <item itemvalue="TestNG.CheckBoxTest" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+Index: src/main/java/Browser/Browser.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Browser/Browser.java b/src/main/java/Browser/Browser.java
+new file mode 100644
+--- /dev/null	(date 1745251519244)
++++ b/src/main/java/Browser/Browser.java	(date 1745251519244)
+@@ -0,0 +1,50 @@
++package Browser;
++
++import java.time.Duration;
++
++public class Browser package browser;
++
++import io.github.bonigarcia.wdm.WebDriverManager;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.chrome.ChromeDriver;
++import org.openqa.selenium.chrome.ChromeOptions;
++import org.openqa.selenium.firefox.FirefoxDriver;
++import org.openqa.selenium.firefox.FirefoxOptions;
++import org.openqa.selenium.remote.CapabilityType;
++
++import java.time.Duration;
++
++import static browser.Config.BROWSER_TYPE;
++
++public class Browser {
++
++    public static WebDriver createDriver(){
++
++        WebDriver driver;
++
++        switch (BROWSER_TYPE){
++            case "chrome":
++                WebDriverManager.chromedriver().setup();
++                ChromeOptions chromeOptions = new ChromeOptions();
++                chromeOptions.addArguments("--headless");
++                chromeOptions.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, "eager");
++                driver = new ChromeDriver(chromeOptions);
++                break;
++            case "firefox":
++                WebDriverManager.firefoxdriver().setup();
++                FirefoxOptions firefoxOptions = new FirefoxOptions();
++                firefoxOptions.addArguments("--headless");
++                firefoxOptions.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, "eager");
++                driver = new FirefoxDriver(firefoxOptions);
++                break;
++            default:
++                throw new IllegalArgumentException("Некорректное имя браузера: " + BROWSER_TYPE);
++        }
++
++        driver.manage().window().maximize();
++        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
++
++        return driver;
++    }
++}{
++}
+Index: src/test/java/UI/RightButtonTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/UI/RightButtonTest.java b/src/test/java/UI/RightButtonTest.java
+new file mode 100644
+--- /dev/null	(date 1745251439117)
++++ b/src/test/java/UI/RightButtonTest.java	(date 1745251439117)
+@@ -0,0 +1,29 @@
++package UI;
++
++import base.BaseTest;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.interactions.Actions;
++import org.testng.Assert;
++import org.testng.annotations.Test;
++
++public class RightButtonTest extends BaseTest {
++
++    private static final String BUTTONS_PAGE_URL = "https://demoqa.com/buttons";
++    private static final By RIGHT_CLICK_BUTTON = By.id("rightClickBtn");
++    private static final By RIGHT_CLICK_MESSAGE = By.id("rightClickMessage");
++
++    @Test
++    public void testRightClickButton() {
++        // 1. Загружаем страницу с кнопками
++        driver.get(BUTTONS_PAGE_URL);
++
++        // 2. Правый клик по кнопке
++        WebElement button = driver.findElement(RIGHT_CLICK_BUTTON);
++        new Actions(driver).contextClick(button).perform();
++
++        // 3. Проверка текста
++        String actualText = driver.findElement(RIGHT_CLICK_MESSAGE).getText();
++        Assert.assertEquals(actualText, "You have done a right click");
++    }
++}
+\ No newline at end of file
